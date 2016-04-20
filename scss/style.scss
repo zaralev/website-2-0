@@ -205,12 +205,17 @@ body {
         background-color: #fff;
     }
     .mail {
+        text-align: left;
         font-size: 1.1em;
         padding: 1em;
         margin-top: 1.5em;
         background-color: #fff;
         border: 0.8em solid $green2;
         color: $purple;
+        .fa {
+          padding-left: 0.3em;
+          padding-right: 0.8em;
+        }
         a {
             font-weight: bold;
             text-decoration: none;
@@ -222,22 +227,22 @@ body {
             }
         }
         .twit {
-          color: $twitter;
-          &:hover {
-            color: #83c6f5;
-          }
+            color: $twitter;
+            &:hover {
+                color: #83c6f5;
+            }
         }
         .git {
-          color: $orange2;
-          &:hover {
-            color: #ffcd6e;
-          }
+            color: $orange2;
+            &:hover {
+                color: #ffcd6e;
+            }
         }
         .pen {
-          color: $pink1;
-          &:hover {
-            color: #ff95c4;
-          }
+            color: $pink1;
+            &:hover {
+                color: #ff95c4;
+            }
         }
     }
 }
@@ -248,7 +253,7 @@ body {
     font-weight: bold;
     color: $peach;
     background-color: $purple2;
-    cursor:pointer;
+    cursor: pointer;
     &:hover {
         background-color: $purple1;
         a {
@@ -258,6 +263,19 @@ body {
     a {
         color: $green2;
         text-decoration: none;
+    }
+}
+.footer {
+    position: relative;
+    top: 4.6em;
+    background-color: $peach;
+    text-align: center;
+    padding: 2em 0;
+    .copyright {
+        padding-top: 0.4em;
+        padding-bottom: 0.1em;
+        background-color: #fff;
+        font-weight: bold;
     }
 }
 .nav {
