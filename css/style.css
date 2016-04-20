@@ -39,6 +39,33 @@ body {
     background-color: #fff;
     border: 0.8em solid #fdf1c5; }
 
+.skills {
+  position: relative;
+  top: 4.6em;
+  background-color: #f3ffd6;
+  text-align: center;
+  padding: 2em; }
+  .skills .desc2 {
+    padding: 1em;
+    background-color: #fff;
+    border: 0.8em solid #bf7eed; }
+  .skills .h2 {
+    font-family: "lemonmilkregular";
+    color: #ff7835;
+    font-size: 1.8em; }
+  .skills ul {
+    padding: 0;
+    font-family: "lemonmilkregular";
+    list-style-type: none; }
+    .skills ul li {
+      display: inline-block; }
+      .skills ul li:first-child {
+        color: #86e1f1; }
+      .skills ul li:nth-child(2) {
+        color: #ffba35; }
+      .skills ul li:last-child {
+        color: #9ee00f; }
+
 .nav {
   font-family: Consolas, monaco, monospace;
   text-transform: lowercase;

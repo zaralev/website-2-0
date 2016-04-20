@@ -51,13 +51,47 @@ body {
         background-color: #fff;
     }
     img {
-      width: 70%;
-      margin-top: 1em;
+        width: 70%;
+        margin-top: 1em;
     }
     .desc {
-      padding: 1em;
-      background-color: #fff;
-      border: 0.8em solid $peach;
+        padding: 1em;
+        background-color: #fff;
+        border: 0.8em solid $peach;
+    }
+}
+.skills {
+    position: relative;
+    top: 4.6em;
+    background-color: $green2;
+    text-align: center;
+    padding: 2em;
+    .desc2 {
+        padding: 1em;
+        background-color: #fff;
+        border: 0.8em solid $purple1;
+    }
+    .h2 {
+      font-family: $heading;
+      color: $orange1;
+      font-size: 1.8em;
+    }
+    ul {
+      padding: 0;
+      font-family: $heading;
+      list-style-type: none;
+      li {
+        display: inline-block;
+        &:first-child {
+          color: $blue1;
+        }
+        &:nth-child(2) {
+          color: $orange2;
+        }
+        &:last-child{
+          color: $green1;
+        }
+      }
     }
 }
 .nav {
