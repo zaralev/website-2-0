@@ -1,6 +1,7 @@
 $navbar: #fff;
 $navtext: #f43;
 $heading: 'lemonmilkregular';
+$body: Consolas, monaco, monospace;
 $pink1: #ff55a1;
 $pink2: #ffeef6;
 $orange1: #ff7835;
@@ -24,7 +25,7 @@ $twitter: #5da8dc;
 }
 body {
     background-color: #fdf;
-    font-family: Consolas, monaco, monospace;
+    font-family: $body;
     font-size: 1em;
 }
 .h1 {
@@ -76,12 +77,14 @@ body {
       color: $orange1;
       font-size: 1.8em;
     }
-    ul {
+    ul.level {
+      margin-top: 0em;
       padding: 0;
       font-family: $heading;
       list-style-type: none;
       li {
         display: inline-block;
+        padding: 0.5em;
         &:first-child {
           color: $blue1;
         }
@@ -93,9 +96,49 @@ body {
         }
       }
     }
+    .name {
+      display:inline-table;
+      width: 7em;
+      margin:auto;
+      text-align:right;
+      font-size: 0.9em;
+            vertical-align: baseline;
+    }
+    .blue {
+      background-color: $blue1;
+      height: 1em;
+    }
+    .orange {
+      background-color: $orange2;
+      height: 1em;
+    }
+    .green {
+      background-color: $green1;
+      height: 1em;
+    }
+    .bar {
+      display:inline-table;
+      margin: auto;
+      height: 1em;
+      width: 50%;
+      vertical-align: middle;
+    }
+    .skill:hover {
+      background-color: $pink2;
+      .green {
+        background-color: #b9f92f;
+      }
+      .orange {
+        background-color: #ffd646;
+      }
+      .blue {
+        background-color: #b6f4ff;
+      }
+    }
+
 }
 .nav {
-    font-family: Consolas, monaco, monospace;
+    font-family: $body;
     text-transform: lowercase;
     position: fixed;
     top: 0;

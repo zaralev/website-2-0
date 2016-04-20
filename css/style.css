@@ -53,18 +53,50 @@ body {
     font-family: "lemonmilkregular";
     color: #ff7835;
     font-size: 1.8em; }
-  .skills ul {
+  .skills ul.level {
+    margin-top: 0em;
     padding: 0;
     font-family: "lemonmilkregular";
     list-style-type: none; }
-    .skills ul li {
-      display: inline-block; }
-      .skills ul li:first-child {
+    .skills ul.level li {
+      display: inline-block;
+      padding: 0.5em; }
+      .skills ul.level li:first-child {
         color: #86e1f1; }
-      .skills ul li:nth-child(2) {
+      .skills ul.level li:nth-child(2) {
         color: #ffba35; }
-      .skills ul li:last-child {
+      .skills ul.level li:last-child {
         color: #9ee00f; }
+  .skills .name {
+    display: inline-table;
+    width: 7em;
+    margin: auto;
+    text-align: right;
+    font-size: 0.9em;
+    vertical-align: baseline; }
+  .skills .blue {
+    background-color: #86e1f1;
+    height: 1em; }
+  .skills .orange {
+    background-color: #ffba35;
+    height: 1em; }
+  .skills .green {
+    background-color: #9ee00f;
+    height: 1em; }
+  .skills .bar {
+    display: inline-table;
+    margin: auto;
+    height: 1em;
+    width: 50%;
+    vertical-align: middle; }
+  .skills .skill:hover {
+    background-color: #ffeef6; }
+    .skills .skill:hover .green {
+      background-color: #b9f92f; }
+    .skills .skill:hover .orange {
+      background-color: #ffd646; }
+    .skills .skill:hover .blue {
+      background-color: #b6f4ff; }
 
 .nav {
   font-family: Consolas, monaco, monospace;
