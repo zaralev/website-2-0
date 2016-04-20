@@ -145,6 +145,25 @@ body {
       .work .project .info p {
         font-size: 1.1em; }
 
+.contact {
+  position: relative;
+  top: 4.6em;
+  background-color: #e8cbfb;
+  text-align: center;
+  padding: 2em; }
+  .contact #mail {
+    color: #86e1f1;
+    background-color: #fff; }
+  .contact .mail {
+    font-size: 1.1em;
+    padding: 1em;
+    margin-top: 1.5em;
+    background-color: #fff;
+    border: 0.8em solid #f3ffd6; }
+  .contact .email {
+    margin-top: 1.5em;
+    font-weight: bold; }
+
 .nav {
   font-family: Consolas, monaco, monospace;
   text-transform: lowercase;

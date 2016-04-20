@@ -14,6 +14,7 @@ $blue2: #c2eef5;
 $indigo: #a0b0ff;
 $purple1: #bf7eed;
 $purple2: #cba0e9;
+$purple3: #e8cbfb;
 $linkedin: #0072b5;
 $twitter: #5da8dc;
 @font-face {
@@ -193,6 +194,30 @@ body {
             }
         }
     }
+}
+
+.contact {
+    position: relative;
+    top: 4.6em;
+    background-color: $purple3;
+    text-align: center;
+    padding: 2em;
+    #mail {
+        color: $blue1;
+        background-color: #fff;
+    }
+    .mail {
+      font-size: 1.1em;
+        padding: 1em;
+        margin-top: 1.5em;
+        background-color: #fff;
+        border: 0.8em solid $green2;
+    }
+    .email {
+      margin-top: 1.5em;
+      font-weight: bold;
+    }
+
 }
 .nav {
     font-family: $body;
