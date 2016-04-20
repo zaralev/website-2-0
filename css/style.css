@@ -6,11 +6,13 @@
   font-style: normal; }
 body {
   background-color: #fdf;
+  font-family: Consolas, monaco, monospace;
   font-size: 1em; }
 
-h1 {
+.h1 {
   font-family: "lemonmilkregular";
-  font-size: 10em; }
+  font-size: 3em;
+  padding: 0.1em; }
 
 .splash {
   position: relative;
@@ -19,6 +21,23 @@ h1 {
   padding: 2em;
   text-align: center;
   transition: all 1s ease; }
+
+.about {
+  position: relative;
+  top: 4.6em;
+  background-color: #c2eef5;
+  text-align: center;
+  padding: 2em; }
+  .about #about {
+    color: #a0b0ff;
+    background-color: #fff; }
+  .about img {
+    width: 70%;
+    margin-top: 1em; }
+  .about .desc {
+    padding: 1em;
+    background-color: #fff;
+    border: 0.8em solid #fdf1c5; }
 
 .nav {
   font-family: Consolas, monaco, monospace;
@@ -38,21 +57,23 @@ h1 {
   .nav ul {
     list-style-type: none;
     float: right;
-    margin: 1em 1em 0.5em 0em; }
+    margin: 1em 1em 0.5em 0; }
     .nav ul li {
       display: inline-block;
       background-color: #fff;
       padding: 1em; }
-
-.nav.hidden {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%); }
-
-.hide {
-  display: none;
-  visibility: hidden; }
+  .nav a {
+    text-decoration: none;
+    color: #9ee00f;
+    background-color: #f3ffd6; }
+    .nav a:active, .nav a:hover {
+      color: #ff7835;
+      background-color: #ffeef6; }
+  .nav.hidden {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%); }
 
 /*# sourceMappingURL=style.css.map */
