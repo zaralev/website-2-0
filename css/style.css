@@ -159,10 +159,43 @@ body {
     padding: 1em;
     margin-top: 1.5em;
     background-color: #fff;
-    border: 0.8em solid #f3ffd6; }
-  .contact .email {
-    margin-top: 1.5em;
-    font-weight: bold; }
+    border: 0.8em solid #f3ffd6;
+    color: #993dda; }
+    .contact .mail a {
+      font-weight: bold;
+      text-decoration: none; }
+    .contact .mail .lin {
+      color: #0072b5; }
+      .contact .mail .lin:hover {
+        color: #1a91d7; }
+    .contact .mail .twit {
+      color: #5da8dc; }
+      .contact .mail .twit:hover {
+        color: #83c6f5; }
+    .contact .mail .git {
+      color: #ffba35; }
+      .contact .mail .git:hover {
+        color: #ffcd6e; }
+    .contact .mail .pen {
+      color: #ff55a1; }
+      .contact .mail .pen:hover {
+        color: #ff95c4; }
+
+.email {
+  width: 70%;
+  margin: 1.5em auto auto;
+  padding-top: 0.2em;
+  font-weight: bold;
+  color: #fdf1c5;
+  background-color: #cba0e9;
+  cursor: pointer; }
+  .email:hover {
+    background-color: #bf7eed; }
+    .email:hover a {
+      color: #c2eef5; }
+  .email a {
+    color: #f3ffd6;
+    text-decoration: none; }
 
 .nav {
   font-family: Consolas, monaco, monospace;

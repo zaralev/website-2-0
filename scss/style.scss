@@ -12,6 +12,7 @@ $peach: #fdf1c5;
 $blue1: #86e1f1;
 $blue2: #c2eef5;
 $indigo: #a0b0ff;
+$purple: #993dda;
 $purple1: #bf7eed;
 $purple2: #cba0e9;
 $purple3: #e8cbfb;
@@ -34,21 +35,19 @@ body {
     font-size: 3em;
     padding: 0.1em;
 }
-
 .h3 {
-  margin-top: 1em;
-  margin-bottom: 0.4em;
-  font-size: 1.8em;
-  line-height: 1em;
-  font-family: $heading;
-  display:block;
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+    font-size: 1.8em;
+    line-height: 1em;
+    font-family: $heading;
+    display: block;
 }
-
 .h4 {
-  font-size: 1.2em;
-  display:block;
-  font-weight:bold;
-  font-style:italic;
+    font-size: 1.2em;
+    display: block;
+    font-weight: bold;
+    font-style: italic;
 }
 .splash {
     position: relative;
@@ -73,7 +72,7 @@ body {
         margin-top: 1em;
     }
     .desc {
-      font-size: 1.1em;
+        font-size: 1.1em;
         padding: 1em;
         background-color: #fff;
         border: 0.8em solid $peach;
@@ -166,19 +165,19 @@ body {
         background-color: #fff;
     }
     .project {
-      margin-top:2em;
-      padding: 1.5em;
+        margin-top: 2em;
+        padding: 1.5em;
         background-color: #fff;
         .image {
             display: inline-block;
             // margin: 1em;  //USE FOR DESKTOP
             // width: 20%;
             width: 100%;
-            text-align:center;
+            text-align: center;
             vertical-align: middle;
             float: left;
             .pic {
-              margin:auto;
+                margin: auto;
                 display: block;
                 max-width: 100%;
                 height: auto;
@@ -189,13 +188,12 @@ body {
             margin: auto;
             // width: 65%; //USE FOR DESKTOP
             vertical-align: middle;
-            p{
-              font-size: 1.1em;
+            p {
+                font-size: 1.1em;
             }
         }
     }
 }
-
 .contact {
     position: relative;
     top: 4.6em;
@@ -207,17 +205,60 @@ body {
         background-color: #fff;
     }
     .mail {
-      font-size: 1.1em;
+        font-size: 1.1em;
         padding: 1em;
         margin-top: 1.5em;
         background-color: #fff;
         border: 0.8em solid $green2;
+        color: $purple;
+        a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .lin {
+            color: $linkedin;
+            &:hover {
+                color: #1a91d7;
+            }
+        }
+        .twit {
+          color: $twitter;
+          &:hover {
+            color: #83c6f5;
+          }
+        }
+        .git {
+          color: $orange2;
+          &:hover {
+            color: #ffcd6e;
+          }
+        }
+        .pen {
+          color: $pink1;
+          &:hover {
+            color: #ff95c4;
+          }
+        }
     }
-    .email {
-      margin-top: 1.5em;
-      font-weight: bold;
+}
+.email {
+    width: 70%;
+    margin: 1.5em auto auto;
+    padding-top: 0.2em;
+    font-weight: bold;
+    color: $peach;
+    background-color: $purple2;
+    cursor:pointer;
+    &:hover {
+        background-color: $purple1;
+        a {
+            color: $blue2;
+        }
     }
-
+    a {
+        color: $green2;
+        text-decoration: none;
+    }
 }
 .nav {
     font-family: $body;
