@@ -13,7 +13,7 @@ $peach: #fdf1c5;
 $peach1: #fff8e0;
 $blue1: #86e1f1;
 $blue2: #c2eef5;
-$blue3:#e2fbff;
+$blue3: #e2fbff;
 $cyan: #e3f9f1;
 $indigo: #a0b0ff;
 $indigo1: #e8ecff;
@@ -73,13 +73,13 @@ body {
         list-style-type: none;
         float: left;
         li {
-          text-align:center;
+            text-align: center;
             display: inline-block;
             background-color: $navbar;
             padding: 1em 0.5em;
         }
     }
-    li:first-child a{
+    li:first-child a {
         font-size: 1.4em; // for mobile
         &:link,
         &:visited {
@@ -92,7 +92,7 @@ body {
             background-color: $peach1;
         }
     }
-    li:nth-child(2) a{
+    li:nth-child(2) a {
         font-size: 1.4em; // for mobile
         &:link,
         &:visited {
@@ -105,7 +105,7 @@ body {
             background-color: $peach1;
         }
     }
-    li:nth-child(3) a{
+    li:nth-child(3) a {
         font-size: 1.4em; // for mobile
         &:link,
         &:visited {
@@ -118,7 +118,7 @@ body {
             background-color: $peach1;
         }
     }
-    li:nth-child(4) a{
+    li:nth-child(4) a {
         font-size: 1.4em; // for mobile
         &:link,
         &:visited {
@@ -143,7 +143,7 @@ body {
     position: relative;
     top: 4.6em;
     background-color: $peach;
-    padding: 3.5em 2em 2em 2em;
+    padding: 3.5em 2em 2em;
     text-align: center;
     transition: all 1s ease;
 }
