@@ -22,12 +22,18 @@ body {
   line-height: 1em;
   font-family: "lemonmilkregular";
   display: block; }
+  @media screen and (min-width: 1024px) {
+    .h3 {
+      font-size: 1.2em; } }
 
 .h4 {
   font-size: 1.2em;
   display: block;
   font-weight: bold;
   font-style: italic; }
+  @media screen and (min-width: 1024px) {
+    .h4 {
+      font-size: 1em; } }
 
 .nav {
   font-family: Consolas, monaco, monospace;
@@ -50,6 +56,12 @@ body {
       .nav ul {
         float: right;
         padding-right: 2em; } }
+    @media screen and (min-width: 1024px) {
+      .nav ul {
+        margin-right: 6.5em; } }
+    @media screen and (min-width: 1280px) {
+      .nav ul {
+        margin-right: 9.5em; } }
     .nav ul li {
       font-size: 1.2em;
       text-align: center;
@@ -101,6 +113,12 @@ body {
   @media screen and (min-width: 768px) {
     .splash {
       padding: 3.6em 3em 3em; } }
+  @media screen and (min-width: 1024px) {
+    .splash {
+      padding: 4.6em 9em 4em; } }
+  @media screen and (min-width: 1280px) {
+    .splash {
+      padding: 3.7em 12em; } }
 
 .about {
   position: relative;
@@ -136,6 +154,20 @@ body {
         margin-top: 2em;
         display: inline-table;
         width: 50%; } }
+  @media screen and (min-width: 1024px) {
+    .about {
+      padding: 4.8em 5em; }
+      .about #me {
+        margin-top: 1em;
+        margin-right: 1.5em; }
+      .about .desc {
+        margin-top: 3em;
+        width: 40%; } }
+  @media screen and (min-width: 1280px) {
+    .about {
+      padding: 4.8em 8em; }
+      .about .desc {
+        margin-top: 4em; } }
 
 .skills {
   position: relative;
@@ -146,10 +178,22 @@ body {
   @media screen and (min-width: 768px) {
     .skills {
       padding: 3.7em; } }
+  @media screen and (min-width: 1024px) {
+    .skills {
+      padding: 3.7em 9.8em; } }
+  @media screen and (min-width: 1280px) {
+    .skills {
+      padding: 3.7em 14.8em; } }
   .skills .desc2 {
     padding: 1em;
     background-color: #fff;
     border: 0.8em solid #bf7eed; }
+    @media screen and (min-width: 768px) {
+      .skills .desc2 {
+        padding: 2em; } }
+    @media screen and (min-width: 1024px) {
+      .skills .desc2 {
+        padding: 2.5em; } }
   .skills .h2 {
     font-family: "lemonmilkregular";
     color: #ff7835;
@@ -211,11 +255,17 @@ body {
   position: relative;
   top: 4.6em;
   background-color: #ffeef6;
-  text-align: center;
   padding: 1em; }
   @media screen and (min-width: 768px) {
     .work {
-      padding: 3.7em; } }
+      padding: 3.7em;
+      text-align: justify; } }
+  @media screen and (min-width: 1024px) {
+    .work {
+      padding: 3.7em 9.8em; } }
+  @media screen and (min-width: 1280px) {
+    .work {
+      padding: 3.7em 14.8em; } }
   .work #wrk {
     color: #ff55a1;
     background-color: #fff; }
@@ -228,6 +278,10 @@ body {
         display: inline-table;
         width: 42%;
         vertical-align: top; } }
+    @media screen and (min-width: 1024px) {
+      .work .project {
+        width: 28%;
+        padding: 1em; } }
     .work .project .image {
       display: inline-block;
       width: 100%;
@@ -243,8 +297,14 @@ body {
       display: inline-block;
       margin: auto;
       vertical-align: middle; }
+      .work .project .info span {
+        text-align: center; }
       .work .project .info p {
+        text-align: center;
         font-size: 1.1em; }
+        @media screen and (min-width: 1024px) {
+          .work .project .info p {
+            font-size: 0.9em; } }
 
 .art {
   position: relative;
@@ -255,6 +315,12 @@ body {
   @media screen and (min-width: 768px) {
     .art {
       padding: 3.7em; } }
+  @media screen and (min-width: 1024px) {
+    .art {
+      padding: 3.7em 9.8em; } }
+  @media screen and (min-width: 1280px) {
+    .art {
+      padding: 3.7em 14.8em; } }
   .art #artsy {
     color: #9ee00f;
     background-color: #fff; }
@@ -268,6 +334,9 @@ body {
   @media screen and (min-width: 768px) {
     .contact {
       padding: 3.7em; } }
+  @media screen and (min-width: 1024px) {
+    .contact {
+      padding: 3.7em 9.8em; } }
   .contact #mail {
     color: #86e1f1;
     background-color: #fff; }

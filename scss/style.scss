@@ -34,7 +34,6 @@ $desktop: 1280px;
     font-style: normal;
 }
 body {
-    // background-color: #fdf;
     background-color: #fff;
     font-family: $body;
     font-size: 1em;
@@ -52,12 +51,18 @@ body {
     line-height: 1em;
     font-family: $heading;
     display: block;
+    @media screen and (min-width: $laptop) {
+        font-size: 1.2em;
+    }
 }
 .h4 {
     font-size: 1.2em;
     display: block;
     font-weight: bold;
     font-style: italic;
+    @media screen and (min-width: $laptop) {
+        font-size: 1em;
+    }
 }
 .nav {
     font-family: $body;
@@ -79,6 +84,12 @@ body {
         @media screen and (min-width: $tablet) {
             float: right;
             padding-right: 2em;
+        }
+        @media screen and (min-width: $laptop) {
+            margin-right: 6.5em;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-right:9.5em;
         }
         li {
             font-size: 1.2em;
@@ -149,89 +160,21 @@ body {
         transform: translateY(-100%);
     }
 }
-// ////////// FIX FOR THE NAV HIDDEN ON MOBILE /////////////
-// .testing {
-//     font-family: $body;
-//     text-transform: lowercase;
-//     width: 100%;
-//     z-index: 50;
-//     text-align: center;
-//     padding: 0;
-// }
-// ul.test {
-//     list-style-type: none;
-//     // float: left;
-//     padding: 0;
-//     margin: 1em auto -3em;
-//     li {
-//         text-align: center;
-//         display: inline-block;
-//         background-color: $navbar;
-//         padding: 0.5em 0.3em;
-//         &:first-child a {
-//             font-size: 1.2em; // for mobile
-//             &:link,
-//             &:visited {
-//                 color: $indigo;
-//                 background-color: $indigo1;
-//             }
-//             &:active,
-//             &:hover {
-//                 color: $orange1;
-//                 background-color: $peach1;
-//             }
-//         }
-//         &:nth-child(2) a {
-//             font-size: 1.2em; // for mobile
-//             &:link,
-//             &:visited {
-//                 color: $pink1;
-//                 background-color: $pink2;
-//             }
-//             &:active,
-//             &:hover {
-//                 color: $orange1;
-//                 background-color: $peach1;
-//             }
-//         }
-//         &:nth-child(3) a {
-//             font-size: 1.2em; // for mobile
-//             &:link,
-//             &:visited {
-//                 color: $green1;
-//                 background-color: $green2;
-//             }
-//             &:active,
-//             &:hover {
-//                 color: $orange1;
-//                 background-color: $peach1;
-//             }
-//         }
-//         &:nth-child(4) a {
-//             font-size: 1.2em; // for mobile
-//             &:link,
-//             &:visited {
-//                 color: $blue1;
-//                 background-color: $blue3;
-//             }
-//             &:active,
-//             &:hover {
-//                 color: $orange1;
-//                 background-color: $peach1;
-//             }
-//         }
-//     }
-// }
-// ////////// END FIX FOR THE NAV HIDDEN ON MOBILE /////////////
+
 .splash {
     position: relative;
     top: 4.6em;
     background-color: $peach;
     padding: 1.4em 1em 1em;
     text-align: center;
-    // transition: all 1s ease;
     @media screen and (min-width: $tablet) {
         padding: 3.6em 3em 3em;
+    }
+    @media screen and (min-width: $laptop) {
+        padding: 4.6em 9em 4em;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 3.7em 12em;
     }
 }
 .about {
@@ -275,6 +218,23 @@ body {
             width: 50%;
         }
     }
+    @media screen and (min-width: $laptop) {
+        padding: 4.8em 5em;
+        #me {
+            margin-top: 1em;
+            margin-right:1.5em;
+        }
+        .desc {
+            margin-top: 3em;
+            width: 40%;
+        }
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 4.8em 8em;
+        .desc {
+            margin-top: 4em;
+          }
+    }
 }
 .skills {
     position: relative;
@@ -285,10 +245,22 @@ body {
     @media screen and (min-width: $tablet) {
       padding: 3.7em;
     }
+    @media screen and (min-width: $laptop) {
+        padding: 3.7em 9.8em;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 3.7em 14.8em;
+    }
     .desc2 {
         padding: 1em;
         background-color: #fff;
         border: 0.8em solid $purple1;
+        @media screen and (min-width: $tablet) {
+            padding: 2em;
+        }
+        @media screen and (min-width: $laptop) {
+            padding: 2.5em;
+        }
     }
     .h2 {
         font-family: $heading;
@@ -366,10 +338,16 @@ body {
     position: relative;
     top: 4.6em;
     background-color: $pink2;
-    text-align: center;
     padding: 1em;
     @media screen and (min-width: $tablet) {
       padding: 3.7em;
+      text-align:justify;
+    }
+    @media screen and (min-width: $laptop) {
+        padding: 3.7em 9.8em;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 3.7em 14.8em;
     }
     #wrk {
         color: $pink1;
@@ -384,10 +362,12 @@ body {
           width: 42%;
           vertical-align:top;
         }
+        @media screen and (min-width: $laptop) {
+          width:28%;
+          padding: 1em;
+        }
         .image {
             display: inline-block;
-            // margin: 1em;  //USE FOR DESKTOP
-            // width: 20%;
             width: 100%;
             text-align: center;
             vertical-align: middle;
@@ -402,10 +382,16 @@ body {
         .info {
             display: inline-block;
             margin: auto;
-            // width: 65%; //USE FOR DESKTOP
             vertical-align: middle;
+            span {
+              text-align: center;
+            }
             p {
+              text-align: center;
                 font-size: 1.1em;
+                @media screen and (min-width: $laptop) {
+                    font-size: 0.9em;
+                }
             }
         }
     }
@@ -418,6 +404,12 @@ body {
     padding: 1em;
     @media screen and (min-width: $tablet) {
       padding: 3.7em;
+    }
+    @media screen and (min-width: $laptop) {
+        padding: 3.7em 9.8em;
+    }
+    @media screen and (min-width: $desktop) {
+        padding: 3.7em 14.8em;
     }
     #artsy {
         color: $green1;
@@ -432,6 +424,9 @@ body {
     padding: 1em;
     @media screen and (min-width: $tablet) {
       padding: 3.7em;
+    }
+    @media screen and (min-width: $laptop) {
+        padding: 3.7em 9.8em;
     }
     #mail {
         color: $blue1;
