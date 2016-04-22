@@ -385,6 +385,13 @@ body {
                 max-width: 100%;
                 height: auto;
             }
+            &:hover {
+              opacity: 0.8;
+
+              &::after{
+                content: 'click for more';
+              }
+            }
         }
         .info {
             display: inline-block;
@@ -437,7 +444,7 @@ body {
                 padding-bottom: 1em;
                 font-size: 1em;
                 span.artLink {
-                  display:block;
+                    display: block;
                     font-size: 1.1em;
                     font-weight: bold;
                     a {

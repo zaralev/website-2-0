@@ -300,6 +300,10 @@ body {
         display: block;
         max-width: 100%;
         height: auto; }
+      .work .project .image:hover {
+        opacity: 0.8; }
+        .work .project .image:hover::after {
+          content: 'click for more'; }
     .work .project .info {
       display: inline-block;
       margin: auto;
