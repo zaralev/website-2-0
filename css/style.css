@@ -97,8 +97,7 @@ body {
   top: 4.6em;
   background-color: #fdf1c5;
   padding: 1.4em 1em 1em;
-  text-align: center;
-  transition: all 1s ease; }
+  text-align: center; }
   @media screen and (min-width: 768px) {
     .splash {
       padding: 2.8em 2em 2em; } }
