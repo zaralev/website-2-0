@@ -30,6 +30,15 @@ $twitter: #5da8dc;
     }
 }
 
+.testing {
+font-family: $body;
+text-transform: lowercase;
+width: 100%;
+z-index: 50;
+text-align: center;
+padding: 0;
+}
+
 
 ul.test {
     list-style-type: none;
