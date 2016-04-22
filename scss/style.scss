@@ -71,16 +71,17 @@ body {
     transition: transform 1s cubic-bezier(0.25,0.1,0.25,1);
     ul {
         list-style-type: none;
-        float: left;
+        // float: left;
+        padding:0;
         li {
             text-align: center;
             display: inline-block;
             background-color: $navbar;
-            padding: 1em 0.5em;
+            padding: 0.5em 0.3em;
         }
     }
     li:first-child a {
-        font-size: 1.4em; // for mobile
+        font-size: 1.2em; // for mobile
         &:link,
         &:visited {
             color: $indigo;
@@ -143,7 +144,7 @@ body {
     position: relative;
     top: 4.6em;
     background-color: $peach;
-    padding: 3.5em 2em 2em;
+    padding: 3.5em 1em 1em;
     text-align: center;
     transition: all 1s ease;
 }
@@ -152,7 +153,7 @@ body {
     top: 4.6em;
     background-color: $blue2;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     #abt {
         color: $indigo;
         background-color: #fff;
@@ -173,7 +174,7 @@ body {
     top: 4.6em;
     background-color: $green2;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     .desc2 {
         padding: 1em;
         background-color: #fff;
@@ -249,7 +250,7 @@ body {
     top: 4.6em;
     background-color: $pink2;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     #wrk {
         color: $pink1;
         background-color: #fff;
@@ -289,7 +290,7 @@ body {
     top: 4.6em;
     background-color: $purple3;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     #mail {
         color: $blue1;
         background-color: #fff;
@@ -298,7 +299,7 @@ body {
         text-align: left;
         font-size: 1.1em;
         padding: 1em;
-        margin-top: 1.5em;
+        margin-top: 1em;
         background-color: #fff;
         border: 0.8em solid $green2;
         color: $purple;
@@ -335,32 +336,33 @@ body {
             }
         }
     }
-}
-.email {
-    width: 70%;
-    margin: 2em auto auto;
-    padding-top: 0.2em;
-    font-weight: bold;
-    color: $peach;
-    background-color: $purple2;
-    cursor: pointer;
-    &:hover {
-        background-color: $purple1;
+    .email {
+        width: 70%;
+        margin: 1.5em auto auto;
+        padding-top: 0.2em;
+        font-weight: bold;
+        color: $peach;
+        background-color: $purple2;
+        cursor: pointer;
+        &:hover {
+            background-color: $purple1;
+            a {
+                color: $blue2;
+            }
+        }
         a {
-            color: $blue2;
+            color: $green2;
+            text-decoration: none;
         }
     }
-    a {
-        color: $green2;
-        text-decoration: none;
-    }
 }
+
 .art {
     position: relative;
     top: 4.6em;
     background-color: $cyan;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
     #artsy {
         color: $green1;
         background-color: #fff;
@@ -371,7 +373,7 @@ body {
     top: 4.6em;
     background-color: $peach;
     text-align: center;
-    padding: 2em 0;
+    padding: 1em 0;
     .copyright {
         padding-top: 0.4em;
         padding-bottom: 0.1em;

@@ -45,14 +45,14 @@ body {
   transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1); }
   .nav ul {
     list-style-type: none;
-    float: left; }
+    padding: 0; }
     .nav ul li {
       text-align: center;
       display: inline-block;
       background-color: #fff;
-      padding: 1em 0.5em; }
+      padding: 0.5em 0.3em; }
   .nav li:first-child a {
-    font-size: 1.4em; }
+    font-size: 1.2em; }
     .nav li:first-child a:link, .nav li:first-child a:visited {
       color: #a0b0ff;
       background-color: #e8ecff; }
@@ -94,7 +94,7 @@ body {
   position: relative;
   top: 4.6em;
   background-color: #fdf1c5;
-  padding: 3.5em 2em 2em 2em;
+  padding: 3.5em 1em 1em;
   text-align: center;
   transition: all 1s ease; }
 
@@ -103,7 +103,7 @@ body {
   top: 4.6em;
   background-color: #c2eef5;
   text-align: center;
-  padding: 2em; }
+  padding: 1em; }
   .about #abt {
     color: #a0b0ff;
     background-color: #fff; }
@@ -121,7 +121,7 @@ body {
   top: 4.6em;
   background-color: #f3ffd6;
   text-align: center;
-  padding: 2em; }
+  padding: 1em; }
   .skills .desc2 {
     padding: 1em;
     background-color: #fff;
@@ -181,7 +181,7 @@ body {
   top: 4.6em;
   background-color: #ffeef6;
   text-align: center;
-  padding: 2em; }
+  padding: 1em; }
   .work #wrk {
     color: #ff55a1;
     background-color: #fff; }
@@ -212,7 +212,7 @@ body {
   top: 4.6em;
   background-color: #e8cbfb;
   text-align: center;
-  padding: 2em; }
+  padding: 1em; }
   .contact #mail {
     color: #86e1f1;
     background-color: #fff; }
@@ -220,7 +220,7 @@ body {
     text-align: left;
     font-size: 1.1em;
     padding: 1em;
-    margin-top: 1.5em;
+    margin-top: 1em;
     background-color: #fff;
     border: 0.8em solid #f3ffd6;
     color: #993dda; }
@@ -246,29 +246,28 @@ body {
       color: #ff55a1; }
       .contact .mail .pen:hover {
         color: #ff95c4; }
-
-.email {
-  width: 70%;
-  margin: 2em auto auto;
-  padding-top: 0.2em;
-  font-weight: bold;
-  color: #fdf1c5;
-  background-color: #cba0e9;
-  cursor: pointer; }
-  .email:hover {
-    background-color: #bf7eed; }
-    .email:hover a {
-      color: #c2eef5; }
-  .email a {
-    color: #f3ffd6;
-    text-decoration: none; }
+  .contact .email {
+    width: 70%;
+    margin: 1.5em auto auto;
+    padding-top: 0.2em;
+    font-weight: bold;
+    color: #fdf1c5;
+    background-color: #cba0e9;
+    cursor: pointer; }
+    .contact .email:hover {
+      background-color: #bf7eed; }
+      .contact .email:hover a {
+        color: #c2eef5; }
+    .contact .email a {
+      color: #f3ffd6;
+      text-decoration: none; }
 
 .art {
   position: relative;
   top: 4.6em;
   background-color: #e3f9f1;
   text-align: center;
-  padding: 2em; }
+  padding: 1em; }
   .art #artsy {
     color: #9ee00f;
     background-color: #fff; }
@@ -278,7 +277,7 @@ body {
   top: 4.6em;
   background-color: #fdf1c5;
   text-align: center;
-  padding: 2em 0; }
+  padding: 1em 0; }
   .footer .copyright {
     padding-top: 0.4em;
     padding-bottom: 0.1em;
