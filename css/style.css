@@ -361,13 +361,21 @@ body {
         background-image: url("../img/gallery/trad/print.png");
         background-size: 30em; }
       .art #grid .block:nth-child(3) {
-        background-color: #e8cbfb; }
+        background-color: #e8cbfb;
+        background-image: url("../img/gallery/dig/me.jpg");
+        background-size: 13em; }
       .art #grid .block:nth-child(4) {
-        background-color: #f3ffd6; }
+        background-color: #f3ffd6;
+        background-image: url("../img/gallery/logo-3d/mike.png");
+        background-size: 25em; }
       .art #grid .block:nth-child(5) {
-        background-color: #ffe1d2; }
+        background-color: #ffe1d2;
+        background-image: url("../img/gallery/photo/apple.jpg");
+        background-size: 18em; }
       .art #grid .block:nth-child(6) {
-        background-color: #e8ecff; }
+        background-color: #e8ecff;
+        background-image: url("../img/gallery/pixel/castle.gif");
+        background-size: 30em; }
 
 .contact {
   position: relative;

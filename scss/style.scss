@@ -461,15 +461,23 @@ body {
             }
             &:nth-child(3) {
                 background-color: $purple3;
+                background-image: url("../img/gallery/dig/me.jpg");
+                background-size: 13em;
             }
             &:nth-child(4) {
                 background-color: $green2;
+                background-image: url("../img/gallery/logo-3d/mike.png");
+                background-size: 25em;
             }
             &:nth-child(5) {
                 background-color: $orange3;
+                background-image: url("../img/gallery/photo/apple.jpg");
+                background-size: 18em;
             }
             &:nth-child(6) {
                 background-color: $indigo1;
+                background-image: url("../img/gallery/pixel/castle.gif");
+                background-size: 30em;
             }
         }
     }
