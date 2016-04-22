@@ -6,6 +6,7 @@ $pink2: #ffeef6;
 $orange1: #ff7835;
 $orange3: #ffe1d2;
 $orange2: #ffba35;
+$buttonHov: #ff7cb6;
 $green1: #9ee00f;
 $green2: #f3ffd6;
 $green3: #cad9a5;
@@ -387,10 +388,6 @@ body {
             }
             &:hover {
               opacity: 0.8;
-
-              &::after{
-                content: 'click for more';
-              }
             }
         }
         .info {
@@ -406,6 +403,20 @@ body {
                 @media screen and (min-width: $laptop) {
                     font-size: 0.9em;
                 }
+            }
+            button {
+              width: 100%;
+              border:none;
+              background-color: $pink1;
+              padding:0.5em;
+              margin:0;
+              color:#fff;
+              text-transform:uppercase;
+              transition: 500ms all ease-in;
+              &:hover {
+                background-color: $buttonHov;
+                letter-spacing: 0.1em;
+              }
             }
         }
     }

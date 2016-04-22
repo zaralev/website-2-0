@@ -302,8 +302,6 @@ body {
         height: auto; }
       .work .project .image:hover {
         opacity: 0.8; }
-        .work .project .image:hover::after {
-          content: 'click for more'; }
     .work .project .info {
       display: inline-block;
       margin: auto;
@@ -316,6 +314,18 @@ body {
         @media screen and (min-width: 1024px) {
           .work .project .info p {
             font-size: 0.9em; } }
+      .work .project .info button {
+        width: 100%;
+        border: none;
+        background-color: #ff55a1;
+        padding: 0.5em;
+        margin: 0;
+        color: #fff;
+        text-transform: uppercase;
+        transition: 500ms all ease-in; }
+        .work .project .info button:hover {
+          background-color: #ff7cb6;
+          letter-spacing: 0.1em; }
 
 .art {
   position: relative;
