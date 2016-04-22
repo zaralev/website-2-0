@@ -35,7 +35,7 @@ $desktop: 1280px;
     font-style: normal;
 }
 * {
-  box-sizing:border-box;
+    box-sizing: border-box;
 }
 body {
     background-color: #fff;
@@ -424,42 +424,59 @@ body {
         background-color: #fff;
     }
     #grid {
-      display:table;
-      margin-top: 2em;
-      .block {
-        display:inline-table;
-        width:50%;
-        padding: 3em 0.5em 3em 0.5em;
-        p {
-          font-family: $heading;
-          font-size: 1em;
-        }
-        &:first-child {
-          background-color:$pink2;
-          a {
-            color: $purple;
-            background-color: $purple3;
-          }
-        }
-        &:nth-child(2) {
-          background-color: $blue2;
-        }
-        &:nth-child(3) {
-          background-color: $blue2;
-        }
-        &:nth-child(4) {
-          background-color: $pink2;
-        }
-        &:nth-child(5) {
-          background-color: $pink2;
-        }
-        &:nth-child(6) {
-          background-color: $blue2;
-        }
-      }
+        display: table;
+        margin-top: 2em;
+        .block {
+            display: inline-table;
+            width: 45%;
+            padding: 3em 0;
+            p {
+                font-family: $heading;
+                font-size: 1em;
+                background-color: #fff;
+            }
+            a {
+                text-decoration: none;
 
+            }
+            &:first-child {
+                background-color: $pink2;
+                a {
+                    color: $pink1;
+                    &:hover {
+                      color: #555;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                background-color: $blue2;
+                a {
+                    color: $blue1;
+                    &:hover {
+                      color: #555;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                background-color: $purple3;
+                a {
+                    color: $purple;
+                    &:hover {
+                      color: #555;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                background-color: $pink2;
+            }
+            &:nth-child(5) {
+                background-color: $pink2;
+            }
+            &:nth-child(6) {
+                background-color: $blue2;
+            }
+        }
     }
-
 }
 .contact {
     position: relative;
