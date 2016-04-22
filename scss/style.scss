@@ -89,7 +89,7 @@ body {
             margin-right: 6.5em;
         }
         @media screen and (min-width: $desktop) {
-            margin-right:9.5em;
+            margin-right: 9.5em;
         }
         li {
             font-size: 1.2em;
@@ -160,13 +160,13 @@ body {
         transform: translateY(-100%);
     }
 }
-
 .splash {
     position: relative;
     top: 4.6em;
     background-color: $peach;
     padding: 1.4em 1em 1em;
     text-align: center;
+    transition: 500ms all ease-in;
     @media screen and (min-width: $tablet) {
         padding: 3.6em 3em 3em;
     }
@@ -183,6 +183,7 @@ body {
     background-color: $blue2;
     text-align: center;
     padding: 1em;
+    transition: 500ms all ease-in;
     #abt {
         color: $indigo;
         background-color: #fff;
@@ -204,7 +205,7 @@ body {
         padding: 2.8em 2em;
         #me {
             margin-top: 2em;
-            margin-right:1em;
+            margin-right: 1em;
             display: inline-table;
             width: 30%;
             vertical-align: top;
@@ -222,7 +223,7 @@ body {
         padding: 4.8em 5em;
         #me {
             margin-top: 1em;
-            margin-right:1.5em;
+            margin-right: 1.5em;
         }
         .desc {
             margin-top: 3em;
@@ -233,7 +234,7 @@ body {
         padding: 4.8em 8em;
         .desc {
             margin-top: 4em;
-          }
+        }
     }
 }
 .skills {
@@ -242,8 +243,9 @@ body {
     background-color: $green2;
     text-align: center;
     padding: 1em;
+    transition: 500ms all ease-in;
     @media screen and (min-width: $tablet) {
-      padding: 3.7em;
+        padding: 3.7em;
     }
     @media screen and (min-width: $laptop) {
         padding: 3.7em 9.8em;
@@ -267,7 +269,7 @@ body {
         color: $orange1;
         font-size: 1.8em;
         @media screen and (min-width: $tablet) {
-          font-size: 2.6em;
+            font-size: 2.6em;
         }
     }
     ul.level {
@@ -277,8 +279,8 @@ body {
         list-style-type: none;
         font-size: 1.1em;
         @media screen and (min-width: $tablet) {
-          font-size: 1.6em;
-          margin-bottom: 0.3em;
+            font-size: 1.6em;
+            margin-bottom: 0.3em;
         }
         li {
             display: inline-block;
@@ -339,9 +341,10 @@ body {
     top: 4.6em;
     background-color: $pink2;
     padding: 1em;
+    transition: 500ms all ease-in;
     @media screen and (min-width: $tablet) {
-      padding: 3.7em;
-      text-align:justify;
+        padding: 3.7em;
+        text-align: justify;
     }
     @media screen and (min-width: $laptop) {
         padding: 3.7em 9.8em;
@@ -358,13 +361,13 @@ body {
         padding: 1.5em;
         background-color: #fff;
         @media screen and (min-width: $tablet) {
-          display:inline-table;
-          width: 42%;
-          vertical-align:top;
+            display: inline-table;
+            width: 42%;
+            vertical-align: top;
         }
         @media screen and (min-width: $laptop) {
-          width:28%;
-          padding: 1em;
+            width: 28%;
+            padding: 1em;
         }
         .image {
             display: inline-block;
@@ -384,10 +387,10 @@ body {
             margin: auto;
             vertical-align: middle;
             span {
-              text-align: center;
+                text-align: center;
             }
             p {
-              text-align: center;
+                text-align: center;
                 font-size: 1.1em;
                 @media screen and (min-width: $laptop) {
                     font-size: 0.9em;
@@ -402,8 +405,9 @@ body {
     background-color: $cyan;
     text-align: center;
     padding: 1em;
+    transition: 500ms all ease-in;
     @media screen and (min-width: $tablet) {
-      padding: 3.7em;
+        padding: 3.7em;
     }
     @media screen and (min-width: $laptop) {
         padding: 3.7em 9.8em;
@@ -422,8 +426,9 @@ body {
     background-color: $purple3;
     text-align: center;
     padding: 1em;
+    transition: 500ms all ease-in;
     @media screen and (min-width: $tablet) {
-      padding: 3.7em;
+        padding: 3.7em;
     }
     @media screen and (min-width: $laptop) {
         padding: 3.7em 9.8em;
@@ -441,8 +446,11 @@ body {
         border: 0.6em solid $green2;
         color: $purple;
         @media screen and (min-width: $tablet) {
-          width: 70%;
-          margin:1em auto 0 auto;
+            width: 70%;
+            margin: 1em auto 0;
+        }
+        @media screen and (min-width: $laptop) {
+            padding: 1em;
         }
         .fa {
             padding-left: 0.3em;
@@ -486,7 +494,7 @@ body {
         background-color: $purple2;
         cursor: pointer;
         @media screen and (min-width: $tablet) {
-          width: 38%;
+            width: 38%;
         }
         &:hover {
             background-color: $purple1;

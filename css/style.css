@@ -109,7 +109,8 @@ body {
   top: 4.6em;
   background-color: #fdf1c5;
   padding: 1.4em 1em 1em;
-  text-align: center; }
+  text-align: center;
+  transition: 500ms all ease-in; }
   @media screen and (min-width: 768px) {
     .splash {
       padding: 3.6em 3em 3em; } }
@@ -125,7 +126,8 @@ body {
   top: 4.6em;
   background-color: #c2eef5;
   text-align: center;
-  padding: 1em; }
+  padding: 1em;
+  transition: 500ms all ease-in; }
   .about #abt {
     color: #a0b0ff;
     background-color: #fff; }
@@ -174,7 +176,8 @@ body {
   top: 4.6em;
   background-color: #f3ffd6;
   text-align: center;
-  padding: 1em; }
+  padding: 1em;
+  transition: 500ms all ease-in; }
   @media screen and (min-width: 768px) {
     .skills {
       padding: 3.7em; } }
@@ -255,7 +258,8 @@ body {
   position: relative;
   top: 4.6em;
   background-color: #ffeef6;
-  padding: 1em; }
+  padding: 1em;
+  transition: 500ms all ease-in; }
   @media screen and (min-width: 768px) {
     .work {
       padding: 3.7em;
@@ -311,7 +315,8 @@ body {
   top: 4.6em;
   background-color: #e3f9f1;
   text-align: center;
-  padding: 1em; }
+  padding: 1em;
+  transition: 500ms all ease-in; }
   @media screen and (min-width: 768px) {
     .art {
       padding: 3.7em; } }
@@ -330,7 +335,8 @@ body {
   top: 4.6em;
   background-color: #e8cbfb;
   text-align: center;
-  padding: 1em; }
+  padding: 1em;
+  transition: 500ms all ease-in; }
   @media screen and (min-width: 768px) {
     .contact {
       padding: 3.7em; } }
@@ -351,7 +357,10 @@ body {
     @media screen and (min-width: 768px) {
       .contact .mail {
         width: 70%;
-        margin: 1em auto 0 auto; } }
+        margin: 1em auto 0; } }
+    @media screen and (min-width: 1024px) {
+      .contact .mail {
+        padding: 1em; } }
     .contact .mail .fa {
       padding-left: 0.3em;
       padding-right: 0.8em; }
