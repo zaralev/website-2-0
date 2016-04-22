@@ -34,6 +34,9 @@ $desktop: 1280px;
     font-weight: normal;
     font-style: normal;
 }
+* {
+  box-sizing:border-box;
+}
 body {
     background-color: #fff;
     font-family: $body;
@@ -403,10 +406,10 @@ body {
 .art {
     position: relative;
     top: 4.6em;
-    margin:auto;
+    margin: auto;
     background-color: $cyan;
     text-align: center;
-    padding: 1em 1em 3em 1em;
+    padding: 1em 1em 3em;
     @media screen and (min-width: $tablet) {
         padding: 3.7em;
     }
@@ -420,36 +423,41 @@ body {
         color: $green1;
         background-color: #fff;
     }
-    hr {
-      margin: 2em 0em 2em 0em;
-      border: 0.3em solid $blue1;
-    }
-    .gallery {
-      @media screen and (min-width: $tablet) {
-          display: inline-table;
-          width: 20%;
-          vertical-align: top;
-      }
-      @media screen and (min-width: $laptop) {
-          width: 28%;
-          padding: 1em;
-      }
-      .galleryTitle {
-        padding:0;
-        margin-top: 2em;
-        margin-bottom: -1.5em;
-        text-align:center;
-        background-color: #fff;
-        font-family: $heading;
-        span.category {
-          font-size: 1.2em;
-          letter-spacing: 0.1em;
+    #grid {
+      display:table;
+      margin-top: 2em;
+      .block {
+        display:inline-table;
+        width:50%;
+        padding: 3em 0.5em 3em 0.5em;
+        p {
+          font-family: $heading;
+          font-size: 1em;
+        }
+        &:first-child {
+          background-color:$pink2;
+          a {
+            color: $purple;
+            background-color: $purple3;
+          }
+        }
+        &:nth-child(2) {
+          background-color: $blue2;
+        }
+        &:nth-child(3) {
+          background-color: $blue2;
+        }
+        &:nth-child(4) {
+          background-color: $pink2;
+        }
+        &:nth-child(5) {
+          background-color: $pink2;
+        }
+        &:nth-child(6) {
+          background-color: $blue2;
         }
       }
-      .fotorama {
-          margin: 2em auto -1em auto;
-          text-align:center;
-      }
+
     }
 
 }
