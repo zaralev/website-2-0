@@ -319,7 +319,7 @@ body {
   margin: auto;
   background-color: #e3f9f1;
   text-align: center;
-  padding: 1em 1em 3em; }
+  padding: 3em 0 3em 0; }
   @media screen and (min-width: 768px) {
     .art {
       padding: 3.7em; } }
@@ -333,12 +333,13 @@ body {
     color: #9ee00f;
     background-color: #fff; }
   .art #grid {
+    width: 100%;
     display: table;
     margin-top: 2em; }
     .art #grid .block {
       display: inline-table;
-      width: 45%;
-      padding: 3em 0; }
+      width: 50%;
+      padding: 5em 0; }
       .art #grid .block p {
         font-family: "lemonmilkregular";
         font-size: 1em;
