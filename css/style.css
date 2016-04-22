@@ -100,7 +100,7 @@ body {
   text-align: center; }
   @media screen and (min-width: 768px) {
     .splash {
-      padding: 2.8em 2em 2em; } }
+      padding: 3.6em 3em 3em; } }
 
 .about {
   position: relative;
@@ -112,7 +112,7 @@ body {
     color: #a0b0ff;
     background-color: #fff; }
   .about #me {
-    text-align: left; }
+    text-align: center; }
     .about #me img {
       width: 70%;
       margin-top: 1em; }
@@ -143,6 +143,9 @@ body {
   background-color: #f3ffd6;
   text-align: center;
   padding: 1em; }
+  @media screen and (min-width: 768px) {
+    .skills {
+      padding: 3.7em; } }
   .skills .desc2 {
     padding: 1em;
     background-color: #fff;
@@ -151,12 +154,19 @@ body {
     font-family: "lemonmilkregular";
     color: #ff7835;
     font-size: 1.8em; }
+    @media screen and (min-width: 768px) {
+      .skills .h2 {
+        font-size: 2.6em; } }
   .skills ul.level {
     margin-top: 0;
     padding: 0;
     font-family: "lemonmilkregular";
     list-style-type: none;
     font-size: 1.1em; }
+    @media screen and (min-width: 768px) {
+      .skills ul.level {
+        font-size: 1.6em;
+        margin-bottom: 0.3em; } }
     .skills ul.level li {
       display: inline-block;
       padding: 0.2em; }
@@ -203,6 +213,9 @@ body {
   background-color: #ffeef6;
   text-align: center;
   padding: 1em; }
+  @media screen and (min-width: 768px) {
+    .work {
+      padding: 3.7em; } }
   .work #wrk {
     color: #ff55a1;
     background-color: #fff; }
@@ -210,6 +223,11 @@ body {
     margin-top: 2em;
     padding: 1.5em;
     background-color: #fff; }
+    @media screen and (min-width: 768px) {
+      .work .project {
+        display: inline-table;
+        width: 42%;
+        vertical-align: top; } }
     .work .project .image {
       display: inline-block;
       width: 100%;
@@ -228,12 +246,28 @@ body {
       .work .project .info p {
         font-size: 1.1em; }
 
+.art {
+  position: relative;
+  top: 4.6em;
+  background-color: #e3f9f1;
+  text-align: center;
+  padding: 1em; }
+  @media screen and (min-width: 768px) {
+    .art {
+      padding: 3.7em; } }
+  .art #artsy {
+    color: #9ee00f;
+    background-color: #fff; }
+
 .contact {
   position: relative;
   top: 4.6em;
   background-color: #e8cbfb;
   text-align: center;
   padding: 1em; }
+  @media screen and (min-width: 768px) {
+    .contact {
+      padding: 3.7em; } }
   .contact #mail {
     color: #86e1f1;
     background-color: #fff; }
@@ -245,6 +279,10 @@ body {
     background-color: #fff;
     border: 0.6em solid #f3ffd6;
     color: #993dda; }
+    @media screen and (min-width: 768px) {
+      .contact .mail {
+        width: 70%;
+        margin: 1em auto 0 auto; } }
     .contact .mail .fa {
       padding-left: 0.3em;
       padding-right: 0.8em; }
@@ -275,6 +313,9 @@ body {
     color: #fdf1c5;
     background-color: #cba0e9;
     cursor: pointer; }
+    @media screen and (min-width: 768px) {
+      .contact .email {
+        width: 38%; } }
     .contact .email:hover {
       background-color: #bf7eed; }
       .contact .email:hover a {
@@ -282,16 +323,6 @@ body {
     .contact .email a {
       color: #f3ffd6;
       text-decoration: none; }
-
-.art {
-  position: relative;
-  top: 4.6em;
-  background-color: #e3f9f1;
-  text-align: center;
-  padding: 1em; }
-  .art #artsy {
-    color: #9ee00f;
-    background-color: #fff; }
 
 .footer {
   position: relative;

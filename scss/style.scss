@@ -231,7 +231,7 @@ body {
     text-align: center;
     // transition: all 1s ease;
     @media screen and (min-width: $tablet) {
-        padding: 2.8em 2em 2em;
+        padding: 3.6em 3em 3em;
     }
 }
 .about {
@@ -245,7 +245,7 @@ body {
         background-color: #fff;
     }
     #me {
-        text-align: left;
+        text-align: center;
         img {
             width: 70%;
             margin-top: 1em;
@@ -282,6 +282,9 @@ body {
     background-color: $green2;
     text-align: center;
     padding: 1em;
+    @media screen and (min-width: $tablet) {
+      padding: 3.7em;
+    }
     .desc2 {
         padding: 1em;
         background-color: #fff;
@@ -291,6 +294,9 @@ body {
         font-family: $heading;
         color: $orange1;
         font-size: 1.8em;
+        @media screen and (min-width: $tablet) {
+          font-size: 2.6em;
+        }
     }
     ul.level {
         margin-top: 0;
@@ -298,6 +304,10 @@ body {
         font-family: $heading;
         list-style-type: none;
         font-size: 1.1em;
+        @media screen and (min-width: $tablet) {
+          font-size: 1.6em;
+          margin-bottom: 0.3em;
+        }
         li {
             display: inline-block;
             padding: 0.2em;
@@ -358,6 +368,9 @@ body {
     background-color: $pink2;
     text-align: center;
     padding: 1em;
+    @media screen and (min-width: $tablet) {
+      padding: 3.7em;
+    }
     #wrk {
         color: $pink1;
         background-color: #fff;
@@ -366,6 +379,11 @@ body {
         margin-top: 2em;
         padding: 1.5em;
         background-color: #fff;
+        @media screen and (min-width: $tablet) {
+          display:inline-table;
+          width: 42%;
+          vertical-align:top;
+        }
         .image {
             display: inline-block;
             // margin: 1em;  //USE FOR DESKTOP
@@ -392,12 +410,29 @@ body {
         }
     }
 }
+.art {
+    position: relative;
+    top: 4.6em;
+    background-color: $cyan;
+    text-align: center;
+    padding: 1em;
+    @media screen and (min-width: $tablet) {
+      padding: 3.7em;
+    }
+    #artsy {
+        color: $green1;
+        background-color: #fff;
+    }
+}
 .contact {
     position: relative;
     top: 4.6em;
     background-color: $purple3;
     text-align: center;
     padding: 1em;
+    @media screen and (min-width: $tablet) {
+      padding: 3.7em;
+    }
     #mail {
         color: $blue1;
         background-color: #fff;
@@ -410,6 +445,10 @@ body {
         background-color: #fff;
         border: 0.6em solid $green2;
         color: $purple;
+        @media screen and (min-width: $tablet) {
+          width: 70%;
+          margin:1em auto 0 auto;
+        }
         .fa {
             padding-left: 0.3em;
             padding-right: 0.8em;
@@ -451,6 +490,9 @@ body {
         color: $peach;
         background-color: $purple2;
         cursor: pointer;
+        @media screen and (min-width: $tablet) {
+          width: 38%;
+        }
         &:hover {
             background-color: $purple1;
             a {
@@ -461,17 +503,6 @@ body {
             color: $green2;
             text-decoration: none;
         }
-    }
-}
-.art {
-    position: relative;
-    top: 4.6em;
-    background-color: $cyan;
-    text-align: center;
-    padding: 1em;
-    #artsy {
-        color: $green1;
-        background-color: #fff;
     }
 }
 .footer {
