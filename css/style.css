@@ -313,9 +313,10 @@ body {
 .art {
   position: relative;
   top: 4.6em;
+  margin: auto;
   background-color: #e3f9f1;
   text-align: center;
-  padding: 1em; }
+  padding: 1em 1em 3em 1em; }
   @media screen and (min-width: 768px) {
     .art {
       padding: 3.7em; } }
@@ -329,8 +330,21 @@ body {
     color: #9ee00f;
     background-color: #fff; }
   .art .fotorama {
-    margin: 2em auto 0 auto;
+    margin: 2em auto -1em auto;
     text-align: center; }
+  .art hr {
+    margin: 2em 0em 2em 0em;
+    border: 0.3em solid #86e1f1; }
+  .art .galleryTitle {
+    padding: 0;
+    margin-top: 2em;
+    margin-bottom: -1.5em;
+    text-align: center;
+    background-color: #fff;
+    font-family: "lemonmilkregular"; }
+    .art .galleryTitle span.category {
+      font-size: 1.2em;
+      letter-spacing: 0.1em; }
 
 .contact {
   position: relative;
