@@ -366,11 +366,11 @@ body {
         background-color: #fff;
         @media screen and (min-width: $tablet) {
             display: inline-table;
-            width: 42%;
+            width: 49%;
             vertical-align: top;
         }
         @media screen and (min-width: $laptop) {
-            width: 28%;
+            width: 32%;
             padding: 1em;
         }
         .image {
@@ -426,7 +426,7 @@ body {
     #grid {
       width: 100%;
         display: table;
-        margin-top: 2em;
+        margin: 2em auto 0 auto;
         .block {
             display: inline-table;
             width: 50%;

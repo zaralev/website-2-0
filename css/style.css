@@ -283,11 +283,11 @@ body {
     @media screen and (min-width: 768px) {
       .work .project {
         display: inline-table;
-        width: 42%;
+        width: 49%;
         vertical-align: top; } }
     @media screen and (min-width: 1024px) {
       .work .project {
-        width: 28%;
+        width: 32%;
         padding: 1em; } }
     .work .project .image {
       display: inline-block;
@@ -335,7 +335,7 @@ body {
   .art #grid {
     width: 100%;
     display: table;
-    margin-top: 2em; }
+    margin: 2em auto 0 auto; }
     .art #grid .block {
       display: inline-table;
       width: 50%;
