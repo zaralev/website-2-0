@@ -23,6 +23,12 @@ $purple2: #cba0e9;
 $purple3: #e8cbfb;
 $linkedin: #0072b5;
 $twitter: #5da8dc;
+.media {
+    color: blue;
+    @media screen and (min-width: 768px) {
+        color: red;
+    }
+}
 @font-face {
     font-family: 'lemonmilkregular';
     src: url('../fonts/lemonmilk-webfont.eot');
@@ -72,7 +78,7 @@ body {
     ul {
         list-style-type: none;
         // float: left;
-        padding:0;
+        padding: 0;
         li {
             text-align: center;
             display: inline-block;
@@ -356,7 +362,6 @@ body {
         }
     }
 }
-
 .art {
     position: relative;
     top: 4.6em;
