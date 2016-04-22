@@ -319,7 +319,7 @@ body {
   margin: auto;
   background-color: #e3f9f1;
   text-align: center;
-  padding: 3em 0 3em 0; }
+  padding: 3em 0 0; }
   @media screen and (min-width: 768px) {
     .art {
       padding: 3.7em; } }
@@ -335,53 +335,39 @@ body {
   .art #grid {
     width: 100%;
     display: table;
-    margin: 2em auto 0 auto; }
+    margin: 2em auto 0; }
     .art #grid .block {
       display: inline-table;
-      width: 50%;
-      padding: 5em 0; }
+      width: 50%; }
       .art #grid .block p {
-        font-family: "lemonmilkregular";
-        font-size: 1em;
-        background-color: #fff; }
-      .art #grid .block a {
-        text-decoration: none; }
+        background-color: rgba(255, 255, 255, 0.8);
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 1em; }
+        .art #grid .block p span {
+          display: block;
+          font-size: 1.1em;
+          font-weight: bold; }
+          .art #grid .block p span a {
+            color: #0ca6bb; }
+            .art #grid .block p span a:hover {
+              color: #36d5be; }
       .art #grid .block:first-child {
-        background-color: #ffeef6; }
-        .art #grid .block:first-child a {
-          color: #ff55a1; }
-          .art #grid .block:first-child a:hover {
-            color: #555; }
+        background-color: #ffeef6;
+        background-image: url("../img/gallery/design/gradient.jpg");
+        background-size: 20em; }
       .art #grid .block:nth-child(2) {
-        background-color: #c2eef5; }
-        .art #grid .block:nth-child(2) a {
-          color: #86e1f1; }
-          .art #grid .block:nth-child(2) a:hover {
-            color: #555; }
+        background-color: #c2eef5;
+        background-image: url("../img/gallery/trad/print.png");
+        background-size: 30em; }
       .art #grid .block:nth-child(3) {
         background-color: #e8cbfb; }
-        .art #grid .block:nth-child(3) a {
-          color: #993dda; }
-          .art #grid .block:nth-child(3) a:hover {
-            color: #555; }
       .art #grid .block:nth-child(4) {
         background-color: #f3ffd6; }
-        .art #grid .block:nth-child(4) a {
-          color: #9ee00f; }
-          .art #grid .block:nth-child(4) a:hover {
-            color: #555; }
       .art #grid .block:nth-child(5) {
         background-color: #ffe1d2; }
-        .art #grid .block:nth-child(5) a {
-          color: #ffba35; }
-          .art #grid .block:nth-child(5) a:hover {
-            color: #555; }
       .art #grid .block:nth-child(6) {
         background-color: #e8ecff; }
-        .art #grid .block:nth-child(6) a {
-          color: #a0b0ff; }
-          .art #grid .block:nth-child(6) a:hover {
-            color: #555; }
 
 .contact {
   position: relative;

@@ -409,7 +409,7 @@ body {
     margin: auto;
     background-color: $cyan;
     text-align: center;
-    padding: 3em 0 3em 0;
+    padding: 3em 0 0;
     @media screen and (min-width: $tablet) {
         padding: 3.7em;
     }
@@ -424,75 +424,52 @@ body {
         background-color: #fff;
     }
     #grid {
-      width: 100%;
+        width: 100%;
         display: table;
-        margin: 2em auto 0 auto;
+        margin: 2em auto 0;
         .block {
             display: inline-table;
             width: 50%;
-            padding: 5em 0;
+            // padding: 5em 0;
             p {
-                font-family: $heading;
+                background-color: rgba(#ffffff, 0.8);
+                padding-top: 1em;
+                padding-bottom: 1em;
                 font-size: 1em;
-                background-color: #fff;
-            }
-            a {
-                text-decoration: none;
-
+                span {
+                  display:block;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    a {
+                        color: rgb(12, 166, 187);
+                        &:hover {
+                            color: rgb(54, 213, 190);
+                        }
+                    }
+                }
             }
             &:first-child {
                 background-color: $pink2;
-                a {
-                    color: $pink1;
-                    &:hover {
-                      color: #555;
-                    }
-                }
+                background-image: url("../img/gallery/design/gradient.jpg");
+                background-size: 20em;
             }
             &:nth-child(2) {
                 background-color: $blue2;
-                a {
-                    color: $blue1;
-                    &:hover {
-                      color: #555;
-                    }
-                }
+                background-image: url("../img/gallery/trad/print.png");
+                background-size: 30em;
+
             }
             &:nth-child(3) {
                 background-color: $purple3;
-                a {
-                    color: $purple;
-                    &:hover {
-                      color: #555;
-                    }
-                }
             }
             &:nth-child(4) {
                 background-color: $green2;
-                a {
-                    color: $green1;
-                    &:hover {
-                      color: #555;
-                    }
-                }
             }
             &:nth-child(5) {
                 background-color: $orange3;
-                a {
-                    color: $orange2;
-                    &:hover {
-                      color: #555;
-                    }
-                }
             }
             &:nth-child(6) {
                 background-color: $indigo1;
-                a {
-                    color: $indigo;
-                    &:hover {
-                      color: #555;
-                    }
-                }
             }
         }
     }
