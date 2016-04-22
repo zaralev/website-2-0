@@ -405,7 +405,6 @@ body {
     background-color: $cyan;
     text-align: center;
     padding: 1em;
-    transition: 500ms all ease-in;
     @media screen and (min-width: $tablet) {
         padding: 3.7em;
     }
@@ -418,6 +417,10 @@ body {
     #artsy {
         color: $green1;
         background-color: #fff;
+    }
+    .fotorama {
+        margin: 2em auto 0 auto;
+        text-align:center;
     }
 }
 .contact {
