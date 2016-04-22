@@ -23,13 +23,14 @@ $purple2: #cba0e9;
 $purple3: #e8cbfb;
 $linkedin: #0072b5;
 $twitter: #5da8dc;
-.media {
-    color: blue;
-    @media screen and (min-width: 768px) {
-        color: red;
-    }
-}
+// .media {
+//     color: blue;
+//     @media screen and (min-width: 768px) {
+//         color: red;
+//     }
+// }
 
+////////// FIX FOR THE NAV HIDDEN ON MOBILE /////////////
 .testing {
 font-family: $body;
 text-transform: lowercase;
@@ -50,62 +51,63 @@ ul.test {
         display: inline-block;
         background-color: $navbar;
         padding: 0.5em 0.3em;
-    }
-}
-ul.test li:first-child a {
-    font-size: 1.2em; // for mobile
-    &:link,
-    &:visited {
-        color: $indigo;
-        background-color: $indigo1;
-    }
-    &:active,
-    &:hover {
-        color: $orange1;
-        background-color: $peach1;
-    }
-}
-ul.test li:nth-child(2) a {
-    font-size: 1.2em; // for mobile
-    &:link,
-    &:visited {
-        color: $pink1;
-        background-color: $pink2;
-    }
-    &:active,
-    &:hover {
-        color: $orange1;
-        background-color: $peach1;
-    }
-}
-ul.test li:nth-child(3) a {
-    font-size: 1.2em; // for mobile
-    &:link,
-    &:visited {
-        color: $green1;
-        background-color: $green2;
-    }
-    &:active,
-    &:hover {
-        color: $orange1;
-        background-color: $peach1;
-    }
-}
-ul.test li:nth-child(4) a {
-    font-size: 1.2em; // for mobile
-    &:link,
-    &:visited {
-        color: $blue1;
-        background-color: $blue3;
-    }
-    &:active,
-    &:hover {
-        color: $orange1;
-        background-color: $peach1;
+        &:first-child a {
+            font-size: 1.2em; // for mobile
+            &:link,
+            &:visited {
+                color: $indigo;
+                background-color: $indigo1;
+            }
+            &:active,
+            &:hover {
+                color: $orange1;
+                background-color: $peach1;
+            }
+        }
+        &:nth-child(2) a {
+            font-size: 1.2em; // for mobile
+            &:link,
+            &:visited {
+                color: $pink1;
+                background-color: $pink2;
+            }
+            &:active,
+            &:hover {
+                color: $orange1;
+                background-color: $peach1;
+            }
+        }
+        &:nth-child(3) a {
+            font-size: 1.2em; // for mobile
+            &:link,
+            &:visited {
+                color: $green1;
+                background-color: $green2;
+            }
+            &:active,
+            &:hover {
+                color: $orange1;
+                background-color: $peach1;
+            }
+        }
+        &:nth-child(4) a {
+            font-size: 1.2em; // for mobile
+            &:link,
+            &:visited {
+                color: $blue1;
+                background-color: $blue3;
+            }
+            &:active,
+            &:hover {
+                color: $orange1;
+                background-color: $peach1;
+            }
+        }
     }
 }
 
 
+////////// END FIX FOR THE NAV HIDDEN ON MOBILE /////////////
 
 @font-face {
     font-family: 'lemonmilkregular';
