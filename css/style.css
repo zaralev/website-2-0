@@ -5,8 +5,10 @@
   font-weight: normal;
   font-style: normal; }
 body {
+  background-color: #fff;
   font-family: Consolas, monaco, monospace;
-  font-size: 1em; }
+  font-size: 1em;
+  color: #333; }
 
 .h1 {
   font-family: "lemonmilkregular";
@@ -37,7 +39,6 @@ body {
   z-index: 50;
   background: #fff;
   text-align: center;
-  color: #f43;
   padding: 0;
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
   -moz-transition: -moz-transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -45,99 +46,51 @@ body {
   .nav ul {
     list-style-type: none;
     padding: 0; }
+    @media screen and (min-width: 768px) {
+      .nav ul {
+        float: right;
+        padding-right: 2em; } }
     .nav ul li {
+      font-size: 1.2em;
       text-align: center;
       display: inline-block;
       background-color: #fff;
-      padding: 0.9em 0.3em 0.5em 0.3em; }
-      .nav ul li:first-child a {
-        font-size: 1.2em; }
-        .nav ul li:first-child a:link, .nav ul li:first-child a:visited {
-          color: #a0b0ff;
-          background-color: #e8ecff; }
-        .nav ul li:first-child a:active, .nav ul li:first-child a:hover {
-          color: #ff7835;
-          background-color: #fff8e0; }
-      .nav ul li:nth-child(2) a {
-        font-size: 1.2em; }
-        .nav ul li:nth-child(2) a:link, .nav ul li:nth-child(2) a:visited {
-          color: #ff55a1;
-          background-color: #ffeef6; }
-        .nav ul li:nth-child(2) a:active, .nav ul li:nth-child(2) a:hover {
-          color: #ff7835;
-          background-color: #fff8e0; }
-      .nav ul li:nth-child(3) a {
-        font-size: 1.2em; }
-        .nav ul li:nth-child(3) a:link, .nav ul li:nth-child(3) a:visited {
-          color: #9ee00f;
-          background-color: #f3ffd6; }
-        .nav ul li:nth-child(3) a:active, .nav ul li:nth-child(3) a:hover {
-          color: #ff7835;
-          background-color: #fff8e0; }
-      .nav ul li:nth-child(4) a {
-        font-size: 1.2em; }
-        .nav ul li:nth-child(4) a:link, .nav ul li:nth-child(4) a:visited {
-          color: #86e1f1;
-          background-color: #e2fbff; }
-        .nav ul li:nth-child(4) a:active, .nav ul li:nth-child(4) a:hover {
-          color: #ff7835;
-          background-color: #fff8e0; }
+      padding: 0.9em 0.3em 0.5em;
+      transition: 500ms all ease-in; }
+      @media screen and (min-width: 768px) {
+        .nav ul li {
+          font-size: 1.5em;
+          padding: 0.6em 0.3em 0.2em; } }
+      .nav ul li:first-child a:link, .nav ul li:first-child a:visited {
+        color: #a0b0ff;
+        background-color: #e8ecff; }
+      .nav ul li:first-child a:active, .nav ul li:first-child a:hover {
+        color: #ff7835;
+        background-color: #fff8e0; }
+      .nav ul li:nth-child(2) a:link, .nav ul li:nth-child(2) a:visited {
+        color: #ff55a1;
+        background-color: #ffeef6; }
+      .nav ul li:nth-child(2) a:active, .nav ul li:nth-child(2) a:hover {
+        color: #ff7835;
+        background-color: #fff8e0; }
+      .nav ul li:nth-child(3) a:link, .nav ul li:nth-child(3) a:visited {
+        color: #9ee00f;
+        background-color: #f3ffd6; }
+      .nav ul li:nth-child(3) a:active, .nav ul li:nth-child(3) a:hover {
+        color: #ff7835;
+        background-color: #fff8e0; }
+      .nav ul li:nth-child(4) a:link, .nav ul li:nth-child(4) a:visited {
+        color: #86e1f1;
+        background-color: #e2fbff; }
+      .nav ul li:nth-child(4) a:active, .nav ul li:nth-child(4) a:hover {
+        color: #ff7835;
+        background-color: #fff8e0; }
   .nav.hidden {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
     transform: translateY(-100%); }
-
-.testing {
-  font-family: Consolas, monaco, monospace;
-  text-transform: lowercase;
-  width: 100%;
-  z-index: 50;
-  text-align: center;
-  padding: 0; }
-
-ul.test {
-  list-style-type: none;
-  padding: 0;
-  margin: 1em auto -3em; }
-  ul.test li {
-    text-align: center;
-    display: inline-block;
-    background-color: #fff;
-    padding: 0.5em 0.3em; }
-    ul.test li:first-child a {
-      font-size: 1.2em; }
-      ul.test li:first-child a:link, ul.test li:first-child a:visited {
-        color: #a0b0ff;
-        background-color: #e8ecff; }
-      ul.test li:first-child a:active, ul.test li:first-child a:hover {
-        color: #ff7835;
-        background-color: #fff8e0; }
-    ul.test li:nth-child(2) a {
-      font-size: 1.2em; }
-      ul.test li:nth-child(2) a:link, ul.test li:nth-child(2) a:visited {
-        color: #ff55a1;
-        background-color: #ffeef6; }
-      ul.test li:nth-child(2) a:active, ul.test li:nth-child(2) a:hover {
-        color: #ff7835;
-        background-color: #fff8e0; }
-    ul.test li:nth-child(3) a {
-      font-size: 1.2em; }
-      ul.test li:nth-child(3) a:link, ul.test li:nth-child(3) a:visited {
-        color: #9ee00f;
-        background-color: #f3ffd6; }
-      ul.test li:nth-child(3) a:active, ul.test li:nth-child(3) a:hover {
-        color: #ff7835;
-        background-color: #fff8e0; }
-    ul.test li:nth-child(4) a {
-      font-size: 1.2em; }
-      ul.test li:nth-child(4) a:link, ul.test li:nth-child(4) a:visited {
-        color: #86e1f1;
-        background-color: #e2fbff; }
-      ul.test li:nth-child(4) a:active, ul.test li:nth-child(4) a:hover {
-        color: #ff7835;
-        background-color: #fff8e0; }
 
 .splash {
   position: relative;
