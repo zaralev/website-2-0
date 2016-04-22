@@ -467,13 +467,31 @@ body {
                 }
             }
             &:nth-child(4) {
-                background-color: $pink2;
+                background-color: $green2;
+                a {
+                    color: $green1;
+                    &:hover {
+                      color: #555;
+                    }
+                }
             }
             &:nth-child(5) {
-                background-color: $pink2;
+                background-color: $orange3;
+                a {
+                    color: $orange2;
+                    &:hover {
+                      color: #555;
+                    }
+                }
             }
             &:nth-child(6) {
-                background-color: $blue2;
+                background-color: $indigo1;
+                a {
+                    color: $indigo;
+                    &:hover {
+                      color: #555;
+                    }
+                }
             }
         }
     }
