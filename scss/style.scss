@@ -79,7 +79,7 @@ body {
             text-align: center;
             display: inline-block;
             background-color: $navbar;
-            padding: 0.5em 0.3em;
+            padding: 0.9em 0.3em 0.5em 0.3em;
             &:first-child a {
                 font-size: 1.2em; // for mobile
                 &:link,
@@ -156,7 +156,7 @@ ul.test {
     list-style-type: none;
     // float: left;
     padding: 0;
-    margin: 0.8em auto -3em;
+    margin: 1em auto -3em;
     li {
         text-align: center;
         display: inline-block;
