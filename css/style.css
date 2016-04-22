@@ -99,6 +99,9 @@ body {
   padding: 1.4em 1em 1em;
   text-align: center;
   transition: all 1s ease; }
+  @media screen and (min-width: 768px) {
+    .splash {
+      padding: 2.8em 2em 2em; } }
 
 .about {
   position: relative;
@@ -109,14 +112,31 @@ body {
   .about #abt {
     color: #a0b0ff;
     background-color: #fff; }
-  .about img {
-    width: 70%;
-    margin-top: 1em; }
+  .about #me {
+    text-align: left; }
+    .about #me img {
+      width: 70%;
+      margin-top: 1em; }
   .about .desc {
     font-size: 1.1em;
     padding: 1em;
     background-color: #fff;
     border: 0.8em solid #fdf1c5; }
+  @media screen and (min-width: 768px) {
+    .about {
+      padding: 2.8em 2em; }
+      .about #me {
+        margin-top: 2em;
+        margin-right: 1em;
+        display: inline-table;
+        width: 30%;
+        vertical-align: top; }
+        .about #me img {
+          width: 100%; }
+      .about .desc {
+        margin-top: 2em;
+        display: inline-table;
+        width: 50%; } }
 
 .skills {
   position: relative;

@@ -88,8 +88,8 @@ body {
             padding: 0.9em 0.3em 0.5em;
             transition: 500ms all ease-in;
             @media screen and (min-width: $tablet) {
-              font-size:1.5em;
-              padding: 0.6em 0.3em 0.2em;
+                font-size: 1.5em;
+                padding: 0.6em 0.3em 0.2em;
             }
             &:first-child a {
                 &:link,
@@ -230,6 +230,9 @@ body {
     padding: 1.4em 1em 1em;
     text-align: center;
     transition: all 1s ease;
+    @media screen and (min-width: $tablet) {
+        padding: 2.8em 2em 2em;
+    }
 }
 .about {
     position: relative;
@@ -241,15 +244,36 @@ body {
         color: $indigo;
         background-color: #fff;
     }
-    img {
-        width: 70%;
-        margin-top: 1em;
+    #me {
+        text-align: left;
+        img {
+            width: 70%;
+            margin-top: 1em;
+        }
     }
     .desc {
         font-size: 1.1em;
         padding: 1em;
         background-color: #fff;
         border: 0.8em solid $peach;
+    }
+    @media screen and (min-width: $tablet) {
+        padding: 2.8em 2em;
+        #me {
+            margin-top: 2em;
+            margin-right:1em;
+            display: inline-table;
+            width: 30%;
+            vertical-align: top;
+            img {
+                width: 100%;
+            }
+        }
+        .desc {
+            margin-top: 2em;
+            display: inline-table;
+            width: 50%;
+        }
     }
 }
 .skills {
